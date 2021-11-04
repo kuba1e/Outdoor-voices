@@ -1,5 +1,36 @@
 @import "mixins";
+@import "breakpoint";
 @import "fonts";
 @import "vendor";
 @import "vars";
-@import "settings";
+@import "swiper/css/bundle";
+@import "burger";
+@import "carousel";
+@import "navigation";
+@import "main";
+@import "header";
+@import "reset";
+
+body {
+  font-family: $page-font;
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+  overflow-x: hidden;
+  
+  @include large-desktop {
+    max-width: 1400px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
+
+  @include laptop {
+    max-width: 992px;
+  }
+
+  @include tablets {
+    max-width: 768px;
+  }
+}

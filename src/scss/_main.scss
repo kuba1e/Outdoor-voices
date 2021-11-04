@@ -1,0 +1,107 @@
+.main-container {
+  max-width: 1224px;
+  margin: 0 auto;
+}
+
+.main-container {
+  max-width: 1224px;
+
+  @include large-desktop {
+    max-width: 1100px;
+  }
+
+  @include desktop {
+    max-width: 900px;
+  }
+
+  @include laptop {
+    max-width: 700px;
+  }
+
+  @include tablets {
+    max-width: 480px;
+  }
+
+  @include phones {
+    max-width: 360px;
+  }
+}
+
+.main__block {
+  @extend %display-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 84px;
+}
+
+.block__image {
+  max-width: 582px;
+  max-height: 776px;
+}
+
+.block__title {
+  font-size: $title-font-size;
+  line-height: 80px;
+}
+
+.block__main-text {
+  font-size: $subtitle-font-size;
+  display: block;
+  padding: 38px 0 35px 0;
+}
+
+.button {
+  display: inline-block;
+  line-height: 48px;
+  padding: 0 24px;
+  background-color: $on-image-font-color;
+  color: $main-color-font;
+  border-radius: 24px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.block__button--black {
+  background-color: #000;
+  color: $on-image-font-color;
+}
+
+.post {
+  padding-bottom: 84px;
+}
+
+.post__text {
+  font-size: $main-title-font-size;
+  line-height: 88px;
+  max-width: 1058px;
+  letter-spacing: 3.5px;
+}
+
+.post__title {
+  font-size: $title-font-size;
+  line-height: 88px;
+  letter-spacing: 3.5px;
+  font-weight: 700;
+}
+
+.arrow-button {
+  @extend %display-flex;
+  font-size: $button-text-font-size;
+  cursor: pointer;
+  padding: 16px 0 8px 0;
+}
+
+.category-block {
+  @extend %display-flex;
+  padding-bottom: 84px;
+}
+
+.categoty-block__left-part {
+  @extend %category-demension;
+  background-image: url("../img/Rectangle5.png");
+}
+
+.categoty-block__right-part {
+  @extend %category-demension;
+  background-image: url("../img/Rectangle6.png");
+}

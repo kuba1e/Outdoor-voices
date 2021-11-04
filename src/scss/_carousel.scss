@@ -1,0 +1,51 @@
+.slider {
+  margin: 0 auto;
+  @extend %display-flex;
+  justify-content: space-between;
+  height: 150px;
+  padding: 0 108px;
+}
+
+.slider__button {
+  color: $on-image-font-color;
+  background-color: $main-color-font;
+}
+
+.slider__title {
+  font-size: $title-font-size;
+}
+
+.swiper {
+  max-width: 1160px;
+  height: 845px;
+}
+
+.swiper__image {
+  max-width: 580px;
+  max-height: 772px;
+}
+
+.swiper-container {
+  position: relative;
+  padding-bottom: 84px;
+}
+.swiper-prev {
+  @extend %arrow-position;
+  left: 0;
+  top: 45%;
+}
+
+.swiper-next {
+  @extend %arrow-position;
+  right: 0;
+  top: 45%;
+}
+
+.slider__caption {
+  font-size: $subtitle-font-size;
+  line-height: 50px;
+}
+.slider__info {
+  font-size: $text-font-size;
+  line-height: 22px;
+}

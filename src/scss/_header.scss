@@ -1,0 +1,68 @@
+.head-block--margin {
+  margin-bottom: 66px;
+}
+
+.head-block {
+  max-width: 100vw;
+  height: 100vh;
+  background-image: url("../img/Main.png");
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.head-block__content {
+  box-sizing: border-box;
+  position: absolute;
+  color: $on-image-font-color;
+  width: 720px;
+  height: 810px;
+  right: 0;
+  top: 40%;
+  padding: 0px 111px 0 108px;
+
+  @include desktop {
+  }
+
+  @include tablets {
+  }
+
+  @include phones {
+  }
+}
+
+.head-block__text {
+  font-size: $subtitle-font-size;
+  line-height: 30px;
+  display: block;
+
+  @include desktop {
+    font-size: $subtitle-desktop-font-size;
+  }
+
+  @include laptop {
+    max-width: 60%;
+  }
+}
+
+.head-block__title {
+  font-size: $main-title-font-size;
+  line-height: 80px;
+
+  @include desktop {
+    font-size: calc($main-title-font-size + 20 * (100vw / 1200));
+  }
+
+  @include laptop {
+    font-size: calc(20px + 16 * (100vw / 880));
+  }
+
+  @include tablets {
+  }
+
+  @include phones {
+  }
+}
+
+.head-block__text--margin {
+  margin-bottom: 35px;
+}
