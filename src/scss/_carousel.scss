@@ -23,6 +23,16 @@
 .swiper__image {
   max-width: 580px;
   max-height: 772px;
+
+  @include desktop {
+    width: 380px;
+  }
+
+  @include laptop {
+  }
+
+  @include tablets {
+  }
 }
 
 .swiper-container {
