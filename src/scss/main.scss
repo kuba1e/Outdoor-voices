@@ -17,20 +17,27 @@ body {
   max-width: 1440px;
   position: relative;
   overflow-x: hidden;
-  
+
   @include large-desktop {
     max-width: 1400px;
   }
 
   @include desktop {
     max-width: 1200px;
+    overflow-x: hidden;
   }
 
   @include laptop {
     max-width: 992px;
+    overflow-x: hidden;
   }
 
   @include tablets {
     max-width: 768px;
+    overflow-x: hidden;
+  }
+
+  @include phones {
+    overflow-x: hidden;
   }
 }

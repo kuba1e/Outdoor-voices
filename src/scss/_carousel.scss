@@ -2,8 +2,33 @@
   margin: 0 auto;
   @extend %display-flex;
   justify-content: space-between;
-  height: 150px;
-  padding: 0 108px;
+  padding: 50px 0;
+
+  @include laptop {
+    flex-direction: column;
+  }
+
+  @include tablets {
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider__info,
+.slider__caption {
+  align-self: flex-start;
+
+  @include desktop {
+  }
+
+  @include laptop {
+  }
+
+  @include tablets {
+  }
 }
 
 .slider__button {
@@ -13,6 +38,7 @@
 
 .slider__title {
   font-size: $title-font-size;
+  line-height: 120px;
 }
 
 .swiper {
@@ -22,9 +48,9 @@
 
 .swiper__image {
   width: 100%;
-
+  height: 100%;
+  object-fit: cover;
   @include desktop {
-    width: 380px;
   }
 
   @include laptop {

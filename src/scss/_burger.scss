@@ -21,6 +21,7 @@
 .burger-line2,
 .burger-line3 {
   position: absolute;
+  z-index: 4;
   display: block;
   width: 45px;
   height: 5px;
@@ -43,7 +44,7 @@
   align-items: center;
   right: 5%;
   top: 0;
-  z-index: 3;
+  z-index: 4;
 
   @include large-desktop {
     display: none;
@@ -63,16 +64,16 @@
 }
 
 .burger-menu {
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 3;
   top: 0;
   right: -100vw;
   display: none;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background-color: chocolate;
   overflow: hidden;
+  background-color: chocolate;
   width: 100vw;
   height: 100vh;
 

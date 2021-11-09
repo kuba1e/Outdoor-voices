@@ -3,9 +3,10 @@
 }
 
 .head-block {
-  max-width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 800px;
   background-image: url("../img/Main.png");
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -15,7 +16,6 @@
   position: absolute;
   color: $on-image-font-color;
   width: 720px;
-  height: 810px;
   right: 0;
   top: 40%;
   padding: 0px 111px 0 108px;

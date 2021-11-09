@@ -32,11 +32,35 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 84px;
+  @include desktop {
+    flex-direction: column;
+    &--flex-direction {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @include laptop {
+  }
+
+  @include tablets {
+  }
+
+  @include phones {
+  }
+}
+
+.body-hidden {
+  overflow: hidden;
 }
 
 .block__image {
   max-width: 582px;
   max-height: 776px;
+}
+
+.block__info {
+  padding: 50px;
+  align-self: flex-start;
 }
 
 .block__title {
@@ -71,10 +95,27 @@
 }
 
 .post__text {
+  @extend %display-flex;
+  align-self: center;
   font-size: $main-title-font-size;
   line-height: 88px;
   max-width: 1058px;
   letter-spacing: 3.5px;
+  @include desktop {
+    font-size: calc(1.5rem + 3 * (100vw / 1200));
+  }
+
+  @include laptop {
+    font-size: calc(1.5rem + 3 * (100vw / 992));
+  }
+
+  @include tablets {
+    font-size: calc(1.5rem + 3 * (100vw / 768));
+  }
+
+  @include phones {
+    font-size: calc(1.5rem + 3 * (100vw / 480));
+  }
 }
 
 .post__title {
@@ -94,14 +135,28 @@
 .category-block {
   @extend %display-flex;
   padding-bottom: 84px;
+  @include desktop {
+    flex-direction: column;
+  }
+
+  @include laptop {
+  }
+
+  @include tablets {
+  }
+
+  @include phones {
+  }
 }
 
 .categoty-block__left-part {
   @extend %category-demension;
   background-image: url("../img/Rectangle5.png");
+  background-size: cover;
 }
 
 .categoty-block__right-part {
   @extend %category-demension;
   background-image: url("../img/Rectangle6.png");
+  background-size: cover;
 }
