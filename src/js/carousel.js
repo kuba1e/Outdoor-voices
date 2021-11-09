@@ -5,7 +5,7 @@ import Swiper from 'swiper/bundle';
 const swiper = new Swiper('.swiper', {
   speed: 400,
   slidesPerView: 2,
-  spaceBetween: 0,
+  spaceBetween: 0,        
   // Optional parameters
   direction: 'horizontal',
   loop: true,

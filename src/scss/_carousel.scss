@@ -21,8 +21,7 @@
 }
 
 .swiper__image {
-  max-width: 580px;
-  max-height: 772px;
+  width: 100%;
 
   @include desktop {
     width: 380px;

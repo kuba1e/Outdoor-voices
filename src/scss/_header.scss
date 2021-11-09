@@ -53,13 +53,15 @@
   }
 
   @include laptop {
-    font-size: calc(20px + 16 * (100vw / 880));
+    font-size: calc(20px + 16 * (100vw / 992));
   }
 
   @include tablets {
+    font-size: calc(20px + 16 * (100vw / 768));
   }
 
   @include phones {
+    font-size: calc(20px + 16 * (100vw / 480));
   }
 }
 
