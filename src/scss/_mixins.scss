@@ -10,8 +10,17 @@
   cursor: pointer;
 }
 %category-demension {
-  display: block;
-  width: 720px;
-  height: 720px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   cursor: pointer;
+}
+
+$maxWidth: 1280;
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 480;
+  font-size: calc(
+    #{$mobSize + px} + #{$addSize} * ((100vw - 480px) / #{$maxWidth})
+  );
 }

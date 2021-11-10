@@ -151,12 +151,18 @@
 
 .categoty-block__left-part {
   @extend %category-demension;
-  background-image: url("../img/Rectangle5.png");
-  background-size: cover;
+  img {
+    display: block;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
 }
 
 .categoty-block__right-part {
   @extend %category-demension;
-  background-image: url("../img/Rectangle6.png");
-  background-size: cover;
+  img {
+    display: block;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
 }
