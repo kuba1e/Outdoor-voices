@@ -68,13 +68,14 @@
 
 .block__title {
   font-size: $title-font-size;
-  line-height: 80px;
+  @include adaptiv-font(64, 32);
 }
 
 .block__main-text {
   font-size: $subtitle-font-size;
   display: block;
-  padding: 38px 0 35px 0;
+  padding: 38px 0;
+  @include adaptiv-font(24, 20);
 }
 
 .button {

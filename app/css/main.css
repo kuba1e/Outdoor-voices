@@ -661,8 +661,7 @@ button.swiper-pagination-bullet {
 
 .slider__title {
   font-size: 4rem;
-  line-height: 120px;
-  font-size: calc( 44px + 20 * ((100vw - 480px) / 720)); }
+  font-size: calc( 32px + 32 * ((100vw - 480px) / 720)); }
 
 .swiper {
   max-width: 1140px;
@@ -793,12 +792,13 @@ button.swiper-pagination-bullet {
 
 .block__title {
   font-size: 4rem;
-  line-height: 80px; }
+  font-size: calc( 32px + 32 * ((100vw - 480px) / 720)); }
 
 .block__main-text {
   font-size: 24px;
   display: block;
-  padding: 38px 0 35px 0; }
+  padding: 38px 0;
+  font-size: calc( 20px + 4 * ((100vw - 480px) / 720)); }
 
 .button {
   display: inline-block;

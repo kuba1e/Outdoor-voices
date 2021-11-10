@@ -37,8 +37,7 @@
 
 .slider__title {
   font-size: $title-font-size;
-  line-height: 120px;
-  @include adaptiv-font(64, 44);
+  @include adaptiv-font(64, 32);
 }
 
 .swiper {
