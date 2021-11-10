@@ -38,23 +38,19 @@
 .slider__title {
   font-size: $title-font-size;
   line-height: 120px;
+  @include adaptiv-font(64, 44);
 }
 
 .swiper {
   max-width: 1140px;
-  max-height: 845px;
+  margin-bottom: 80px;
 }
 
 .swiper__image {
-  object-fit: cover;
-  object-position: 50% 50%;
-  @include desktop {
-  }
-
-  @include laptop {
-  }
-
-  @include tablets {
+  width: 100%;
+  img {
+    object-fit: cover;
+    object-position: 50% 50%;
   }
 }
 

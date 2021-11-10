@@ -7,6 +7,9 @@
   @include tablets {
     display: flex;
   }
+  @include phones {
+    display: flex;
+  }
 }
 
 .nav__list--show-up {
@@ -59,6 +62,10 @@
   }
 
   @include tablets {
+    display: flex;
+  }
+
+  @include phones {
     display: flex;
   }
 }

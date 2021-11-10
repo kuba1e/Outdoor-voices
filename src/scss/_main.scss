@@ -54,8 +54,11 @@
 }
 
 .block__image {
-  max-width: 582px;
-  max-height: 776px;
+  max-width: 100%;
+  img {
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
 }
 
 .block__info {
@@ -123,6 +126,8 @@
   line-height: 88px;
   letter-spacing: 3.5px;
   font-weight: 700;
+
+  @include adaptiv-font(88, 32);
 }
 
 .arrow-button {
